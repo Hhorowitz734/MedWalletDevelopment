@@ -27,6 +27,8 @@ function Register(){
             if (response.data.status != 'ok'){
                 console.log(response.data.error);
                 // HANDLE INVALID USERNAMES AND PASSWORDS HERE
+            } else {
+                console.log('here'); //CHANGE THIS TO REDIRECT USER TO MAIN PAGE
             }
         } catch (error) {
             console.log(error);

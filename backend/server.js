@@ -59,4 +59,22 @@ app.post('/register', async (req, res) => {
     res.json({status: 'ok', username: username, password: hashedPassword})
 })
 
+//Handles User Login
+app.post('/login', async (req, res) => {
+
+    //Collects username and password from user
+    const {username, password} = req.body
+    const user = await User.findOne({username}).lean()
+
+    if (!user){
+        return res.json({status: 'error', error: 'invalid credentials'})
+    }
+    if (await bcrypt.compare(password, user.hashedPassword)){
+        // Username password combination is correct
+        return res.json({status: 'ok', username: username, password: user.hashedPassword})
+    } else {
+        return res.json({status: 'error', error: 'invalid credentials'})
+    }
+})
+
 app.listen(port, () => console.log(`Listening on port ${port}`))
