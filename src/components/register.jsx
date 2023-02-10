@@ -28,7 +28,7 @@ function Register(){
                 console.log(response.data.error);
                 // HANDLE INVALID USERNAMES AND PASSWORDS HERE
             } else {
-                console.log('here'); //CHANGE THIS TO REDIRECT USER TO MAIN PAGE
+                window.location.href = '/problems'
             }
         } catch (error) {
             console.log(error);

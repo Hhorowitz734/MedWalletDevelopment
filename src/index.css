@@ -35,5 +35,12 @@
 
 .backgroundmatch {
   background-color: #242424;
+}
 
+.backgroundshadow {
+  box-shadow: 0 12.5px 25px -6px blue;
+}
+
+.backgroundshadow:hover {
+  box-shadow: 0 12.5px 25px -6px rgb(14 165 233);
 }
