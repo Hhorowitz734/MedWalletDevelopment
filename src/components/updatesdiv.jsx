@@ -2,7 +2,7 @@
 
 function UpdatesDiv(){
     return (
-        <div class = 'h-1/4 w-full bg-black lg:mt-16 mt-8'>
+        <div class = 'h-1/4 w-full bg-black lg:mt-16 mt-8 hidden lg:block'>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
             <div class="backgroundshadow backgroundmatch p-4 m-4 mt-4 lg:mt-8 h-28 md:h-32 lg:h-40 text-center border-md border-blue-700 hover:border-sky-500 transition duration-300 rounded-lg border-2 cursor-pointer">
                 <h1 class = 'font-bold'>Problems</h1>
