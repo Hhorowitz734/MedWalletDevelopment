@@ -1,4 +1,4 @@
-
+import { BsCheckCircle, BsCheckCircleFill, BsXCircle } from "react-icons/bs";
 
 function ProblemsList(){
     return(
@@ -14,19 +14,19 @@ function ProblemsList(){
                 <tr class = 'cursor-pointer hover:bg-blue-800 transition duration-300'>
                     <th class = 'hover:text-sky-500'>Sally's Apples</th>
                     <th class = 'text-green-400'>Easy</th>
-                    <th>Incomplete</th>
+                    <th class="flex items-center justify-center pt-1"><BsCheckCircleFill /></th>
                     <th>3/5</th>
                 </tr>
                 <tr class = 'cursor-pointer hover:bg-blue-800 transition duration-300'>
                     <th class = 'hover:text-sky-500'>Sally's Apples</th>
                     <th class = 'text-yellow-500'>Medium</th>
-                    <th>Incomplete</th>
+                    <th class="flex items-center justify-center pt-1"><BsXCircle /></th>
                     <th>3/5</th>
                 </tr>
                 <tr class = 'cursor-pointer hover:bg-blue-800 transition duration-300'>
                     <th class = 'hover:text-sky-500'>Sally's Apples</th>
                     <th class = 'text-red-600'>Hard</th>
-                    <th>Incomplete</th>
+                    <th class="flex items-center justify-center pt-1"><BsCheckCircle /></th>
                     <th>3/5</th>
                 </tr>
             </table>

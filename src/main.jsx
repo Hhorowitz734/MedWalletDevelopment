@@ -9,6 +9,7 @@ import {
 import LoginPage from './pages/loginpage';
 import RegistrationPage from './pages/registrationpage';
 import ProblemsPage from './pages/problemspage';
+import SampleProblemPage from './pages/sampleproblem';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
   {
     path: "problems",
     element: <ProblemsPage />,
+  },
+  // For the next page, create dynamic routing to route to a given problem
+  {
+    path: "sampleproblem",
+    element: <SampleProblemPage />,
   },
 ]);
 
